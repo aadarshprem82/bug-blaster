@@ -4,7 +4,6 @@ export default function ticketReducer(state, action) {
       return { ...state, tickets: [...state.tickets, action.payload] };
 
     case "UPDATE_TICKET":
-      console.log(state);
       return {
         ...state,
         tickets: state.tickets.map((ticket) =>
